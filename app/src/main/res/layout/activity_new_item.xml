@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cadastro.NewItemActivity">
+
+    <TextView
+        android:id="@+id/tvProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margem_padrao"
+        android:labelFor="@id/etProduct"
+        android:text="@string/lbl_produto"
+        android:textSize="@dimen/text_label_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margem_padrao"
+        android:importantForAutofill="no"
+        android:inputType="textCapSentences"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/tvProduct"
+        app:layout_constraintStart_toStartOf="@id/tvProduct"
+        app:layout_constraintTop_toBottomOf="@id/tvProduct" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margem_padrao"
+        android:labelFor="@id/etAmount"
+        android:text="@string/lbl_amount"
+        android:textSize="@dimen/text_label_size"
+        app:layout_constraintEnd_toEndOf="@id/tvProduct"
+        app:layout_constraintStart_toStartOf="@id/tvProduct"
+        app:layout_constraintTop_toBottomOf="@id/etProduct" />
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margem_padrao"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@id/tvProduct"
+        app:layout_constraintStart_toStartOf="@id/tvProduct"
+        app:layout_constraintTop_toBottomOf="@id/tvAmount" />
+
+    <RadioGroup
+        android:id="@+id/rgAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/tvProduct"
+        app:layout_constraintStart_toStartOf="@id/tvProduct"
+        app:layout_constraintTop_toBottomOf="@id/etAmount">
+
+        <RadioButton
+            android:id="@+id/kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margem_padrao"
+            android:text="@string/lbl_kg" />
+
+        <RadioButton
+            android:id="@+id/litros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margem_padrao"
+            android:text="@string/lbl_litros" />
+
+        <RadioButton
+            android:id="@+id/unidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_unit" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btSalvar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margem_padrao"
+        android:contentDescription="@string/lbl_salvar"
+        android:text="@string/lbl_salvar"
+        app:layout_constraintEnd_toEndOf="@id/tvProduct"
+        app:layout_constraintStart_toStartOf="@id/tvProduct"
+        app:layout_constraintTop_toBottomOf="@id/rgAmount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

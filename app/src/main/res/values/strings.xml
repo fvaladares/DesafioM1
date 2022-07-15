@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Desafio Módulo 1</string>
+    <string name="adicionar_novos_tens">Adicionar novos ítens</string>
+    <string name="empty_list">Nenhum produto na <b>lista.</b></string>
+    <string name="lbl_produto">Produto</string>
+    <string name="lbl_amount">Quantidade</string>
+    <string name="lbl_salvar">Salvar</string>
+    <string name="lbl_kg">KG</string>
+    <string name="lbl_litros">Litros</string>
+    <string name="lbl_unit">Unidade</string>
+    <string name="msg_alerta">Atenção:  Todos os campos devem ser preenchidos!</string>
+    <string name="lbl_unidade">%1$s %2$s</string>
+
+    <plurals name="amount_plural">
+        <item quantity="zero"><b>Nenhum produto na lista</b></item>
+        <item quantity="other">Quantidade de produtos na lista: <b>%d</b> </item>
+    </plurals>
+</resources>
